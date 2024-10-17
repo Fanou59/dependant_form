@@ -1,0 +1,17 @@
+<div{{attributes}}>
+	<div class="mt-3 mx-auto flex flex-column">
+		{{ form_start(form) }}
+
+		{{ form_row(form.drink) }}
+
+		{% if form.typeofbier is defined%}
+			{{ form_row(form.typeofbier) }}
+		{% endif %}
+
+		{% if form.typeofsoda is defined%}
+			{{ form_row(form.typeofsoda) }}
+		{% endif %}
+
+		{{ form_end(form) }}
+	</div>
+</div>
